@@ -1,5 +1,6 @@
 - name: Test connectivity to Windows
-  hosts: windows
+  hosts:
+    - 172.16.1.239
   gather_facts: no
 
   tasks:
