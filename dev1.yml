@@ -1,8 +1,8 @@
-- name: Test connectivity to Windows
+- name: Test connectivity to Linux
   hosts:
-    - 172.16.1.8
+    - bmcia-host
   gather_facts: no
 
   tasks:
-    - name: Ping Windows machine
-      win_ping:
+    - name: Ping Linux machine
+      ping:
