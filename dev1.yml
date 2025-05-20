@@ -1,8 +1,8 @@
-- name: Test connectivity to Linux
+- name: Test connectivity to Windows
   hosts:
-    - bmcia-host
+    - windows_239
   gather_facts: no
 
   tasks:
-    - name: Ping Linux machine
-      ping:
+    - name: Ping Windows machine
+      win_ping:
